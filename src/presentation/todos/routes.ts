@@ -13,6 +13,7 @@ export class TodoRoutes {
 
         route.get('/', todoController.getTodos)
         route.get('/:id', todoController.getTodoById)
+        
         route.post('/', todoController.createTodo)
         route.put('/:id', todoController.updateTodo)
         route.delete('/:id', todoController.deleteTodo)
